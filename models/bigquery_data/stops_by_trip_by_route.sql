@@ -16,7 +16,7 @@ stops_by_trip as (
     select t.*
     ,s.number_of_stops
     from trips as t
-        inner join stops  as s using (trip_id)
+    inner join stops  as s using (trip_id)
 )
 select *
 from stops_by_trip

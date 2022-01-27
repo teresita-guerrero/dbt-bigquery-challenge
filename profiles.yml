@@ -1,0 +1,13 @@
+dbt_demo:
+  outputs:
+    dev:
+      dataset: development
+      fixed_retries: 1
+      method: service-account
+      priority: interactive
+      project: dbt-challenge
+      threads: 1
+      timeout_seconds: 300
+      type: bigquery
+      keyfile: /path/to/your/key.json
+  target: dev

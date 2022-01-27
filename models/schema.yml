@@ -10,6 +10,8 @@ sources:
       - name: routes
       - name: trips
       - name: stop_times
+      - name: stations
+      - name: station_complexes
 
 models:
   - name: copy_data_from_source
@@ -20,4 +22,7 @@ models:
 
   - name: stops_by_trip_by_route
     description: "A model that represents the number of stops that a trip belonging to X route has."
+
+  - name: stations_by_complex
+    description: "A model that represents the number of stations that a complex has."
 
