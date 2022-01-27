@@ -1,0 +1,23 @@
+
+version: 2
+
+sources:
+  - name: bigquery
+    database: bigquery-public-data
+    schema: new_york_subway
+    description: This dataset contains data regarding the subway routes and trips in NY City.
+    tables:
+      - name: routes
+      - name: trips
+      - name: stop_times
+
+models:
+  - name: copy_data_from_source
+    description: "A simple example of how to copy data from source"
+
+  - name: refering_to_a_model
+    description: "A simple example of how refer to a model"
+
+  - name: stops_by_trip_by_route
+    description: "A model that represents the number of stops that a trip belonging to X route has."
+
